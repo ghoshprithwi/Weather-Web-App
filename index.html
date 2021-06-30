@@ -1,50 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Weather app</title>
-    <link rel="stylesheet" href="index.css" />
-  </head>
-  <body>
-    <div class="app-wrap">
-      <header>
-        <input
-          type="text"
-          autocomplete="off"
-          class="search-box"
-          placeholder="Search for a city"
-          autofocus
-        />
-      </header>
-      <main>
-        <div class="weather-card">
-          <section class="location">
-            <div class="weather-icon">
-              <img id="weather-icon-img" width="128px" alt="" />
-            </div>
-            <div class="city"></div>
-            <div class="date"></div>
-          </section>
-          <div class="current">
-            <div class="wind-humidity">
-              <span>
-                <img src="./icons/wind-icon.png" alt="" />
-                <div class="wind-value"></div>
-              </span>
-              <span>
-                <img src="./icons/humidity-icon.png" alt="" />
-                <div class="humidity-value"></div>
-              </span>
-            </div>
-            <div class="temp"></div>
-            <div class="weather"></div>
-            <div class="hi-low"></div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Weather app</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+  <div class="app-wrap">
+    <header>
+      <input type="text" autocomplete="off" class="search-box" placeholder="Search for a city" autofocus />
+    </header>
+    <main>
+      <div class="weather-card">
+        <section class="location">
+          <div class="weather-icon">
+            <img id="weather-icon-img" width="128px" alt="" />
           </div>
+          <div class="city"></div>
+          <div class="date"></div>
+        </section>
+        <div class="current">
+          <div class="wind-humidity">
+            <span>
+              <img src="./icons/wind-icon.png" alt="" />
+              <div class="wind-value"></div>
+            </span>
+            <span>
+              <img src="./icons/humidity-icon.png" alt="" />
+              <div class="humidity-value"></div>
+            </span>
+          </div>
+          <div class="temp"></div>
+          <div class="weather"></div>
+          <div class="hi-low"></div>
         </div>
-      </main>
-    </div>
-    <script src="app.js"></script>
-  </body>
+      </div>
+    </main>
+  </div>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+
 </html>

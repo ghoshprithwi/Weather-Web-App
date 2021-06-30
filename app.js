@@ -1,5 +1,5 @@
 const api = {
-  key: "086d61681d627d06c79d29d2cf246a7e",
+  key: config.API_KEY,
   baseUrl: "https://api.openweathermap.org/data/2.5/",
 };
 
@@ -96,7 +96,7 @@ function dynamicIcon(weatherDescp, timezone, lat, long) {
     body.style.backgroundImage = "linear-gradient(to left, #bdc3c7, #2c3e50)";
   } else if (weatherCondition === "clouds") {
     weatherIcon.src = "./icons/cloudy-icon.png";
-    body.style.backgroundImage = "linear-gradient(to left, #ece9e6, #ffffff)";
+    body.style.backgroundImage = "linear-gradient(to left, #bdc3c7, #2c3e50)";
   } else if (weatherCondition === "smoke") {
     weatherIcon.src = "./icons/smoke-icon.png";
     body.style.backgroundImage = "linear-gradient(to left, #bdc3c7, #2c3e50)";
@@ -108,7 +108,7 @@ function dynamicIcon(weatherDescp, timezone, lat, long) {
     body.style.backgroundImage = "linear-gradient(to left, #3a7bd5, #00d2ff)";
   } else if (weatherCondition === "snow") {
     weatherCondition.src = "./icons/snow-icon.png";
-    body.style.backgroundImage = "linear-gradient(to left, #ece9e6, #ffffff)";
+    body.style.backgroundImage = "linear-gradient(to left, #bdc3c7, #2c3e50)";
   } else if (weatherCondition === "thunderstorm") {
     weatherCondition.src = "./icons/thunderstorm-icon.png";
     body.style.backgroundImage =
